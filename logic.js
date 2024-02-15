@@ -12,6 +12,9 @@ let numberNotChecked = true;
 let hints = 0;
 let hintButton = document.getElementById('hintButton');
 
+let guesses = 0;
+let guessCounter = document.getElementById('guessCounter');
+
 function incrementNumber() {
     count = count + count2 + Math.random();
     numberButton.innerText = Math.floor(count);
@@ -47,7 +50,9 @@ function checkForNumber() {
     } else if (count < 100 || count2 < 100 || count3 < 100) {
         alert("Nya~! All 3 nyamber boxes must be higher than 100, purrr! UwU, make sure they reach that triple-digit milestone, nya!")
     } else {
+        guesses++;
         numberNotChecked = false;
+
         if (inputValue != number) {
             if (inputValue > number) {
                 alert("That's not correct, lower! :<")
@@ -61,6 +66,8 @@ function checkForNumber() {
                 window.close();
             }, 5000);
         }
+
+        guessCounter.innerText = "Guesses: " + guesses
     }
 }
 
