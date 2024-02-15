@@ -55,7 +55,11 @@ function checkForNumber() {
                 alert("That's not correct, higher! :<")
             }
         } else {
+            document.body.style.backgroundColor = "darkgreen";
             alert("Purrr~! That's correct!");
+            setTimeout(function () {
+                window.close();
+            }, 5000);
         }
     }
 }
