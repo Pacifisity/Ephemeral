@@ -87,6 +87,7 @@ function giveHint() {
             alert("Calculating it will not make this easier :)")
         } else if (hints == 4) {
             alert("I'm literally telling you whether or not it's too low or too high >,<")
+            hintButton.style.opacity = 0.3;
         } else if (hints == 5) {
             alert("The number is " + number + ", how many hints do you need?!")
         } else {
