@@ -80,7 +80,7 @@ function giveHint() {
         } else if (hints == 1) {
             alert("The number to guess is calculated with an equation from the three boxes")
         } else if (hints == 2) {
-            alert("Equation: (1*3)/2")
+            alert("Equation: (1*3)/2\nOh yeah, don't forget to multiply it by one billion *wink*")
         } else if (hints == 3) {
             alert("Calculating it will not make this easier :)")
         } else if (hints == 4) {
