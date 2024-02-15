@@ -24,23 +24,25 @@ function incrementNumber2() {
     count2 = count + count2 + count3 + Math.random()
     numberButton2.innerText = Math.floor(count2);
 
-    count = 0
+    count = 0;
     numberButton.innerText = 0;
 }
 
 function incrementNumber3() {
-    count3 = count2 + count3 + Math.random()
+    count3 = count2 + count3 + Math.random();
     numberButton3.innerText = Math.floor(count3);
 
-    count = 0
+    count = 0;
     numberButton.innerText = 0;
 
-    count2 = 0
+    count2 = 0;
     numberButton2.innerText = 0;
 }
 
 function checkForNumber() {
-    number = (count * count3 / count2) * 1000000000
+    number = ((count * count3) / count2) * 1000;
+    console.log((count - Math.floor(count)) + (count2 - Math.floor(count2)) + (count3 - Math.floor(count3)));
+    console.log(number)
 
     const inputElement = document.querySelector('input');
     const inputValue = inputElement.value;
@@ -80,7 +82,7 @@ function giveHint() {
         } else if (hints == 1) {
             alert("The number to guess is calculated with an equation from the three boxes")
         } else if (hints == 2) {
-            alert("Equation: (1*3)/2\nOh yeah, don't forget to multiply it by one billion *wink*")
+            alert("Equation: (1*3)/2\nOh yeah, don't forget to multiply it by one thousand *wink*")
         } else if (hints == 3) {
             alert("Calculating it will not make this easier :)")
         } else if (hints == 4) {
