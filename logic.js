@@ -40,7 +40,7 @@ function incrementNumber3() {
 }
 
 function checkForNumber() {
-    number = ((count * count3) / count2) * 1000;
+    number = ((count * count3) / count2) * 1000000000;
     console.log((count - Math.floor(count)) + (count2 - Math.floor(count2)) + (count3 - Math.floor(count3)));
     console.log(number)
 
