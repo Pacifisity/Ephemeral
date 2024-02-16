@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+div {
+    margin: auto;
+}
+
+button {
+    margin: auto;
+    background-color: black;
+    color: white;
+}

@@ -5,29 +5,22 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="style.css">
     <script src="logic.js" defer></script>
 </head>
 <body>
-
-    <div>
-        <p>Number Boxes:</p>
-        <button id="numberButton" onclick="incrementNumber()">0</button>
-        <button id="numberButton2" onclick="incrementNumber2()">0</button>
-        <button id="numberButton3" onclick="incrementNumber3()">0</button>
-    </div>
-    
-    <div>
-        <p>How fast can you guess my number? UwU</p>
-        <button id="hintButton" onclick="giveHint()">Hint: 0/5</button>
-    </div>
-
-    <div>
-        <p id="guessCounter">Guesses: 0</p>
+    <div id="intro">
+        <p>The Life of...</p>
         <input type="text">
-        <button onclick="checkForNumber()">Check</button>
+        <button onclick="createCharacter()">Create</button>
     </div>
-
+    <div id="stats">
+        <img src="images/person.png" alt="picture of character">
+        <div id="character_details">
+            <p id="name">Loading...</p>
+            <p id="age">Loading...</p>
+        </div>
+    </div>
 </body>
 </html>
