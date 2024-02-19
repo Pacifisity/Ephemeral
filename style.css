@@ -32,7 +32,7 @@
     border-radius: 100vh;
 }
 
-#character_details{
+#character-details {
     background-color: inherit;
 }
 
@@ -46,4 +46,47 @@
     font-size: 1.5vh;
     color: white;
     background-color: inherit;
+}
+
+.status-bar {
+    background-color: #fff;
+
+    display: flex;
+    float: right;
+    margin-right: 1vw;
+
+    width: 10vw;
+    height: 2vh;
+
+    border: 2px solid #333;
+    border-radius: 100px;
+
+    position: relative;
+}
+
+#health-bar {
+    border-radius: inherit;
+
+    height: inherit;
+
+    background-color: #4caf50;
+    transition: width 0.1s ease-in-out;
+}
+
+#sanity-bar {
+    border-radius: inherit;
+
+    height: inherit;
+
+    background-color: #e847fd;
+    transition: width 0.1s ease-in-out;
+}
+
+#happiness-bar {
+    border-radius: inherit;
+
+    height: inherit;
+
+    background-color: #eeff00;
+    transition: width 0.1s ease-in-out;
 }
