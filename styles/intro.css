@@ -1,0 +1,44 @@
+#intro {
+    z-index: 10;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-color: black;
+}
+
+.intro-background {
+    z-index: 11;
+
+    position: absolute;
+    
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/landscape.png);
+    background-size: cover;
+    filter: blur(10px);
+}
+
+.intro-contents {
+    z-index: 12;
+
+    position: absolute;
+    
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+
+    background: none
+}
+
+.intro-contents > * {
+    display: inline-block;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.intro-contents h2 {
+    margin: 10vw;
+}
